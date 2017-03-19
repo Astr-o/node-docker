@@ -1,0 +1,17 @@
+{
+    "name": "node-docker",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docker": "docker build -t astr-o/node-docker . && docker run -it -p 4200:8080 -p 5858:5858 --init astr-o/node-docker "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.15.2",
+        "morgan": "^1.8.1"
+    }
+}
